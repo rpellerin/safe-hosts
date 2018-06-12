@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "0.1.0",
+  "description": "Browse safely",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpellerin/safe-hosts.git"
+  },
+  "author": "Romain Pellerin <contact@romainpellerin.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpellerin/safe-hosts/issues"
+  },
+  "homepage": "https://github.com/rpellerin/safe-hosts#readme",
+  "dependencies": {
+    "commander": "^2.15.1"
+  }
+}
