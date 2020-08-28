@@ -1,8 +1,9 @@
-#!/bin/bash
+#!/bin/bash -x
 
 if [ ! -f /etc/hosts.initial.backup ]; then
-    echo "No initial backup found! Exiting..."
-    exit 1
+    echo "No initial backup found! Creating one..."
+    sudo cp /etc/hosts /etc/hosts.initial.backup
+    echo "Backup file created."
 fi
 
 sudo cp /etc/hosts /etc/hosts.`date --iso-8601=seconds`.backup

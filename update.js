@@ -15,6 +15,10 @@ const download = async ({ url, filename }) =>
     const net = url.startsWith('https') ? https : http
     const request = net
       .get(url, response => {
+        if (response.statusCode !== 200) {
+          console.log(`Encounted error ${response.statusCode} for ${outputFile}`)
+          return resolve()
+        }
         response.pipe(file)
         file.on('finish', () => file.close(resolve))
       })
