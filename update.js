@@ -19,6 +19,7 @@ const download = async ({ url, filename }) =>
         file.on('finish', () => file.close(resolve))
       })
       .on('error', err => {
+        console.error(`Error while updating ${outputFile}`)
         fs.unlink(outputFile)
         return reject(err)
       })
