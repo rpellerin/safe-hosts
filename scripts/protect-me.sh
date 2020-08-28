@@ -7,6 +7,6 @@ if [ ! -f /etc/hosts.initial.backup ]; then
 fi
 
 sudo cp /etc/hosts /etc/hosts.`date --iso-8601=seconds`.backup
-cat /etc/hosts.initial.backup $@ | sudo tee /etc/hosts.tmp
+cat /etc/hosts.initial.backup $@ | sudo tee /etc/hosts.tmp >/dev/null
 sudo mv /etc/hosts.tmp /etc/hosts -f
  
