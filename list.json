@@ -22,9 +22,5 @@
   {
     "url": "https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt",
     "filename": "adaway"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/rpellerin/safe-hosts/master/hosts_files/youtube",
-    "filename": "youtube"
   }
 ]
